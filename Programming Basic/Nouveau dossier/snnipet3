@@ -1,0 +1,10 @@
+var movieLibrary = ["Bambi", "E.T.", "Toy Story"];
+movieLibrary.push("Zorro");
+movieLibrary[1] = "Beetlejuice";
+console.log(movieLibrary);
+
+variable--------------------value 
+  
+movieLibrary----------->["bambi","E.T","Toy Story"]
+movieLibrary----------->["bambi","E.T","Toy Story","Zoroo"]
+-->movieLibrary----------->["bambi","beetlejuice","Toy Story","Zoroo"]

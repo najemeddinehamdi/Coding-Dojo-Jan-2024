@@ -1,0 +1,9 @@
+var produce = ["apples", "oranges"];
+var frozen = ["broccoli", "ice cream"];
+frozen.push("hashbrowns");
+console.log(frozen);
+
+  variable---------------------    value 
+  produce  ------------------->["apples","oranges"]
+  frozen --------------------->["broccoli","ice cream"]
+  -->frozen --------------------->["broccoli","ice cream","hashbrowns"]
