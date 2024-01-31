@@ -1,0 +1,28 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+    background-color: #5d5dc2;
+    border: solid white;
+}
+
+.col {
+    flex: 1;
+    padding: 10px; 
+    text-align: center;
+    border:5px #ffffff solid;
+}
+
+.col-2 {
+    flex: 2;
+    padding: 10px;
+    text-align: center;
+    border: #ffffff solid;
+}
+
+.col-3 {
+    flex: 3;
+    padding: 10px;
+    text-align: center;
+    border: #ffffff solid;
+}
