@@ -1,0 +1,63 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: #f3f3f3;
+    font-family:sans-serif;
+    align-items: center;
+}
+.flex-container{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-between ;
+    margin:100px auto;
+    border-style:solid ;
+    border-color: grey;
+}
+.usercard{
+    width: 100%;
+    font-size: medium;
+    border:10px;
+    justify-content: space-between;
+    align-items:center
+}
+.user{
+    display: flex;
+    width: 90px;
+    position: fixed;
+    margin-left:  30px;;
+    margin-top:80px;
+    border-style: solid ;
+    border-color: rgb(189, 186, 186);
+    border-radius:50%;
+}
+.card-header{
+    background-color:#17a2b8;
+    height: 125px;
+    margin-bottom: 70PX;
+}
+.card-footer h2, 
+.card-footer h5,
+.card-footer a {
+    display: flex;
+    align-items:center;
+    margin: 10px 10px;
+}
+.card-footer{
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.map{
+    width: 15px;
+    padding-right: 10px;
+}
+.gear{
+    display: flex;
+    width: 20px;
+    padding-right: 10px;
+}
+
+
+
