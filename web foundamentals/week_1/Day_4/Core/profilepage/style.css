@@ -1,0 +1,230 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.navbar{
+
+    padding: 10px 100px 10px 100px;
+    background-color: #0f0e0e;
+    display: flex;
+    color: white;
+    align-items:center;
+    text-decoration: none;
+    justify-content: space-between;
+    font-family:cursive;
+}
+.pf{
+    margin-left: 280px;
+}
+.navlinks {
+    display: flex;
+    justify-content:space-evenly;
+    list-style-type: none;
+    width: 50%;
+    margin-right: 80px;
+}
+.bold{
+    font-weight: bold;
+}
+.btn{
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    height: 30px;
+    width:100px ;
+    font-size: 16px;
+    font-family: cursive;
+    margin-right: 330px;
+}
+.user-card{
+    width: 28%;
+    border: 3px solid rgb(160, 160, 160) ;
+    margin: 20px 0px 40px 390px;
+    font-size: medium;
+    overflow: hidden;
+}
+.card-head{
+    background-color: #17a2b8;
+    margin-bottom: 30px;
+    height: 100px;
+}
+.user-img{
+    border-radius: 50%;
+    height: 90px;
+    border:3px solid gray ;
+    margin-top: 40px;
+    margin-left: 15px;
+}
+.card-body{
+    padding: 25px;
+    align-items: center;
+    font-family: cursive;
+}
+.map {
+    width: 12px;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+.gear{
+    width: 12px;
+}
+a{
+    color: #3a81e6;
+}
+h3{
+    padding-bottom: 5px;
+}
+.Connection-request{
+    width: 230px;
+    height: 180px;
+    border: 3px solid rgb(158, 157, 157) ;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.C-head{
+    background-color: rgb(57, 56, 56);
+    color: white;
+    height: 30%;
+    font-family: cursive;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    justify-content: space-around;
+}
+.class1{
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+    font-family: cursive;
+    align-items: center;
+}
+.todd{
+    width: 40px;
+    border-radius: 50%;
+    border: 3px solid black;
+    margin: 10px;
+}
+.acc{
+    width: 30px;
+}
+.clo{
+    width: 30px;
+}
+.phil{
+    width: 40px;
+    border-radius: 50%;
+    border: 3px solid black;
+    margin: 10px;
+}
+.C-body .class1 .todd{
+    vertical-align: middle;
+}
+.C-body .class2 .phil{
+    vertical-align: middle;
+}
+.acc2{
+    width: 30px;
+}
+.clo2{
+    width: 30px;
+}
+.class2{
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+    font-family: cursive;
+    align-items: center;
+}
+.cercle{
+    width: 30px;
+    border-radius: 50%;
+    background-color:rgb(184, 178, 178);
+    color: rgb(57, 56, 56);
+    align-items: center;
+    
+}
+.user-card ,.Connection-request{
+    display: inline-block;
+    vertical-align: top;
+}
+.your-connections{
+    margin-top: 15%;
+    border: 3px solid gray;
+    font-family: cursive;
+}
+.E-head{
+    display: flex;
+    background-color: rgb(57, 56, 56);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    height: 50px;
+}
+.Adrienimg{
+    width: 40px;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+.anne{
+    width: 40px;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+.alayne{
+    width: 40px;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+.arry{
+    width: 40px;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+.class3{
+    margin: 8px;
+    
+}
+.E-bottom{
+    border-top: 2px solid gray;
+    padding-left: 10px;
+}
+.E-body .class3 h4{
+    display: inline-block;
+}
+.E-body .class3 img{
+    vertical-align:middle;
+    margin-right: 10px;
+    margin-top: 6px;
+}
+.cercle2{
+    width: 60px;
+    height: 28px;
+    background-color:rgb(184, 178, 178);
+    color: rgb(57, 56, 56);
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.edu-head{
+    display: flex;
+    height: 40px;
+    background-color:rgb(57, 56, 56) ;
+    color: white;
+    align-items: center;
+}
+.title{
+    margin-left: 10px;
+}
+.education {
+    width: 28%;
+    border: 2px solid grey;
+    margin-left: 391px;
+    font-family: cursive;
+}
+.edu-body{
+    margin: 10px;
+}
+
