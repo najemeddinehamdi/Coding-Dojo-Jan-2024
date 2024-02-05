@@ -1,0 +1,88 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.navbar{
+    display: flex;
+    background-color: grey;
+    color: black;
+    font-family: cursive ;
+    width: 60%;
+    height: 60px;
+    margin-left: 250px;
+    display: flex;
+    align-items:baseline    ;
+    justify-content: space-between;
+}
+.do{
+    margin-left: 10px;
+}
+.search{
+    width: 250px;
+    height: 30px;
+    border: 3px solid black;
+}
+.login{
+    width: 70px;
+    height: 25px;
+    background-color: blue;
+    color: white;
+    margin-right: 10px;
+    box-shadow: 3px 3px black;
+}
+.box-one{
+    margin-left: 250px;
+    margin-top: 30px;
+    height: 160px;
+    width: 430px;
+    border: 3px solid black;
+    font-family: cursive;
+}
+.box-two{
+    margin-left: 250px;
+    margin-top: 30px;
+    height: 160px;
+    width: 430px;
+    border: 3px solid black;
+    font-family: cursive;
+}
+.like{
+    width: 80px;
+    height: 30px;
+    border: 3px solid black;
+    background-color: rgb(234, 193, 87);
+    font-family: cursive;
+}
+.para{
+    text-align:end;
+    margin-left: 40px;
+    vertical-align:top;
+    margin-top: 45px;
+}
+.ninja{
+    margin: 15px;
+}
+.ninja , .para{
+    display: inline-block;
+}
+.def{
+    width: 280px;
+    height: 150px;
+    position:absolute;
+    top: 0px;
+    border: 3px solid black;
+    align-items: center;
+    margin-left: 58%;
+    margin-top: 90px;
+}
+.Definition{
+    margin: 15px;
+}
+.add-def{
+    width: 200px;
+    height: 35px;
+    border: 3px solid black;
+    background-color: rgb(142, 198, 69);
+    font-family: cursive;
+    margin: 10px;
+}
