@@ -22,12 +22,31 @@
                 <img class="user-img" src="./images/jane-m.jpg" alt="">
             </div>
             <div class="card-body">
-                <h1>Jane Doe</h1>
+                <h1 id="name">Jane Doe</h1>
                 <h5><img class="map" src="./icons/map-marker.png" alt="">seattle</h5>
                 <h3>Developer | Engenner | Problem solver</h3>
                 <h3>Master of shadow and the internet!</h3>
-                <a href=""><img class="gear" src="./icons/gear.png" alt="">  edit profile</a>
+                <a href="" id="lien"><img class="gear" src="./icons/gear.png" alt="">  edit profile</a>
             </div>
+            <input type="text" name="" id="Nname">
+<script>
+const lien = document.getElementById("lien");
+const name=document.getElementById("name");
+var name1=document.getElementById("Nname");
+
+lien.addEventListener('click',function(event) {
+      event.preventDefault();
+      //alert(name1.value);
+      name.textContent = name1.value;
+    });
+
+
+
+
+
+
+</script>
+
         </div>
         <div class="Connection-request">
             <div class="C-head">
