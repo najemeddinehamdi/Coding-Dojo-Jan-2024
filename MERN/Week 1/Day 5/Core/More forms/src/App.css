@@ -1,0 +1,64 @@
+.App {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+
+.Yourformdata {
+  width: 200px;
+  height: 400px;
+  margin: 20px;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid #ccc;
+  box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.2);
+  border-radius: 5px;
+
+}
+
+.Yourformdata h2 {
+  color: #0056b3;
+  margin-bottom: 20px;
+}
+
+
