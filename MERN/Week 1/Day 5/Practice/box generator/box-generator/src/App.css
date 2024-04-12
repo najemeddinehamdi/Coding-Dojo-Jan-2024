@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+}
+
+
+
+.color-box-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.color-box {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border: 1px solid #ccc;
+}
