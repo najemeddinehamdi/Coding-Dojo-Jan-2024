@@ -1,0 +1,34 @@
+/* Tab Styles */
+.tabs {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.tab-headers {
+  display: flex;
+}
+
+.tab-header {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+}
+
+.tab-header.active {
+  background-color: #f0f0f0;
+}
+
+.tab-content {
+  padding: 20px;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
