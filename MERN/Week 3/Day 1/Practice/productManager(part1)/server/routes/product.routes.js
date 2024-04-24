@@ -9,7 +9,7 @@ module.exports = (app) => {
     // //? =========== READ ONE ==========
     app.get('/api/product/:id', productControllers.findOneSingleproduct);
     // //? =========== UPDATE ==========
-    app.patch('/api/products/:id', productControllers.updateExistingproduct);        
+    app.patch('/api/products/update/:id', productControllers.updateExistingproduct);        
     // //? =========== DELETE ==========
     app.delete('/api/product/:id', productControllers.deleteAnExistingproduct);
     

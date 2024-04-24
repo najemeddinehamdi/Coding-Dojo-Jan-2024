@@ -15,7 +15,7 @@ function OneProduct() {
             }).catch((err) => {
                 console.log(err)
             })
-}, [])
+}, [id])
 
 
 

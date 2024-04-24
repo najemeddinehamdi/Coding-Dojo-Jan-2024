@@ -1,6 +1,5 @@
 import axios from 'axios'
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
 import Main from './Main'
 
 
@@ -20,16 +19,15 @@ const CreateProduct = () => {
         })
             .then((res) => {
                 console.log("++++++")
+                
+            setTitle("");
+            setPrice(0);
+            setDescription("");
             })
             .catch((err) => {
                 console.log(err)
             })
-            setTitle("");
-            setPrice(0);
-            setDescription("");
     }
-    
-
     return (
         <div className="App">
             <h1>Product Manager :</h1>
@@ -40,9 +38,9 @@ const CreateProduct = () => {
                 <br />
                 <button>create</button>
             </form>
-            <Main/>
+            <Main />
         </div>
     );
 }
 
-export default CreateProduct ;
+export default CreateProduct;
