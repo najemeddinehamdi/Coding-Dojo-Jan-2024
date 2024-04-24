@@ -1,18 +1,19 @@
 import axios from 'axios'
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import Main from './Main'
 
 
 
 const CreateProduct = () => {
     const [title, setTitle] = useState("")
-    const [price, setPrice] = useState()
+    const [price, setPrice] = useState(0)
     const [description, setDescription] = useState("")
 
 
     const SubmitHandler = (e) => {
         e.preventDefault()
-        axios.post("http://localhost:3000/product/create", {
+        axios.post("http://localhost:3000/api/product/create", {
             title: title,
             price: price,
             description: description,
@@ -23,7 +24,11 @@ const CreateProduct = () => {
             .catch((err) => {
                 console.log(err)
             })
+            setTitle("");
+            setPrice(0);
+            setDescription("");
     }
+    
 
     return (
         <div className="App">
@@ -35,6 +40,7 @@ const CreateProduct = () => {
                 <br />
                 <button>create</button>
             </form>
+            <Main/>
         </div>
     );
 }

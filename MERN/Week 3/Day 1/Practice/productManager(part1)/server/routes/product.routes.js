@@ -7,11 +7,11 @@ module.exports = (app) => {
     //? =========== CREATE ==========
     app.post("/api/product/create", productControllers.Createproduct);
     // //? =========== READ ONE ==========
-    // app.get('/api/products/:id', productControllers);
+    app.get('/api/product/:id', productControllers.findOneSingleproduct);
     // //? =========== UPDATE ==========
-    // app.patch('/api/products/:id', productControllers);        
+    app.patch('/api/products/:id', productControllers.updateExistingproduct);        
     // //? =========== DELETE ==========
-    // app.delete('/api/products/:id', productControllers);
+    app.delete('/api/product/:id', productControllers.deleteAnExistingproduct);
     
 
 }
