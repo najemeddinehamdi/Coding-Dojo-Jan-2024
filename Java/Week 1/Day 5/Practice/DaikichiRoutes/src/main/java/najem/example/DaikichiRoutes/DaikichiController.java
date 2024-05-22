@@ -1,11 +1,12 @@
 package najem.example.DaikichiRoutes;
 
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-
+@RequestMapping("/daikichi")
 public class DaikichiController {
     @RequestMapping("")
     public String daikichi() {
@@ -19,25 +20,22 @@ public class DaikichiController {
     public String tomorrow() {
         return "tomorrow an opportunity will arise";
     }
-
-    @RequestMapping("/hello")
-    public String hello() {
-        return "Hello Human";
+    @RequestMapping("/{action}/{place}")
+    public String travling(@PathVariable ("action")String action, @PathVariable ("place")String place){
+        return "Congratulations! you will soon "+action+" to "+place;
     }
-    @RequestMapping("/hello2")
-    public String hello2(@RequestParam (required = false) String name ,String lastname ) {
-        return "Hello " + name+lastname ;
-    }
-    @RequestMapping("/hello3")
-    public String hello3(@RequestParam(required = false) String name ,  @RequestParam int times) {
-        StringBuilder repeatedGreeting = new StringBuilder();
-        for (int i = 0; i < times; i++) {
-            repeatedGreeting.append(name).append("aaa ");
+    @RequestMapping("/lotto/{num}")
+    public String travling2( @PathVariable ("num")Integer num){
+        if (num % 2==0){
+            return "You will take a grand journey in the near future, but be weary of tempting offers";
         }
-        return repeatedGreeting.toString().trim();
-    }
+        else {
+            return "You have enjoyed the fruits of your labor but now is a great time to spend time with family and friends.";
+        }
+
     }
 
+}
 
 
 
