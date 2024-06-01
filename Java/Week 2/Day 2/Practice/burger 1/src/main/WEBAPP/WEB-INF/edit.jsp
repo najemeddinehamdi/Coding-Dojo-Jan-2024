@@ -2,7 +2,7 @@
   Created by IntelliJ IDEA.
   User: najem
   Date: 31/05/2024
-  Time: 15:05
+  Time: 21:17
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -24,31 +24,9 @@
 </head>
 <body>
 <div class="container mt-3">
-<div>
-    <table class="table">
-        <thead class="table-header table-danger">
-        <tr>
-        <th>Burger Name</th>
-        <th>Restaurant Name</th>
-        <th>Rating (out of 5)</th>
-            <th></th>
-        </tr>
-        </thead>
-        <tbody >
-        <c:forEach var="burger"  items="${burgers}">
-        <tr>
-            <td><a><c:out value="${burger.burgerName}"/></a></td>
-            <td><a><c:out value="${burger.restaurantName}"/></a></td>
-            <td><a><c:out value="${burger.rating}"/></a></td>
-            <td><a href="/edit/${burger.id}">edit</a></td>
-        </tr>
-        </c:forEach>
-        </tbody>
-    </table>
-</div>
-    <br>
-    <h2>Add new burger</h2>
-    <form:form action="/addBurger" mode="post" modelAttribute="burger">
+    <h2>Edit Burger</h2>
+    <form:form action="/edit/${burger.id}" mode="post" modelAttribute="burger">
+        <input type="hidden" name="_method" value="put">
         <div>
             <form:label path="burgerName">Burger Name:</form:label><br>
             <form:errors path="burgerName" class="text-danger"/>
@@ -73,6 +51,7 @@
             <input type="submit" value="Submit"/>
         </div>
     </form:form>
+
 </div>
 </body>
 </html>
